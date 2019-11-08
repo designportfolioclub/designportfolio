@@ -355,7 +355,7 @@ section {
 }
 
 #logo img {
-    max-height: 18px;
+    max-height: 32px;
     vertical-align: middle;
     margin-right: 15px;
 }
@@ -544,123 +544,6 @@ section {
     color: #e4473c;
 }
 
-/* Responsive Nav Styling */
-
-#nav-trigger {
-    display: none;
-    text-align: right;
-}
-
-#nav-trigger span {
-    display: inline-block;
-    width: 38px;
-    height: 71px;
-    color: #111;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 22px;
-    text-align: center;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-#nav-trigger span:after {
-    font-family: "fontAwesome";
-    display: inline-block;
-    width: 38px;
-    height: 71px;
-    line-height: 75px;
-    text-align: center;
-    content: "\f0c9";
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-#nav-trigger span.open:after {
-    content: "\f00d";
-}
-
-#nav-trigger span:hover, .nav-solid #nav-trigger span.open:hover, .nav-solid #nav-trigger span:hover {
-    opacity: 0.6;
-}
-
-#nav-trigger span.open, #nav-trigger span.open:hover {
-    color: #111;
-}
-
-.nav-solid #nav-trigger span.open:hover {
-    color: #999;
-}
-
-.nav-solid #nav-trigger span {
-    color: #999;
-    opacity: 1;
-}
-
-nav#nav-mobile {
-    position: relative;
-    display: none;
-}
-
-nav#nav-mobile ul {
-    display: none;
-    list-style-type: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
-}
-
-nav#nav-mobile ul:after {
-    display: none;
-}
-
-nav#nav-mobile li {
-    margin: 0 20px;
-    float: none;
-    text-align: left;
-    border-bottom: 1px solid #e1e1e1;
-}
-
-nav#nav-mobile li:last-child {
-    border-bottom: none;
-}
-
-.nav-solid nav#nav-mobile li {
-    border-top: 1px solid #e1e1e1;
-    border-bottom: none;
-}
-
-nav#nav-mobile a {
-    display: block;
-    padding: 12px 0;
-    color: #333;
-    width: 100%;
-    height: auto;
-    line-height: normal;
-    display: block;
-    border-bottom: none !important;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-nav#nav-mobile a:hover {
-    background: #fafafa;
-    opacity: 1;
-}
-
 /* --------- 2.5 Social Elements ---------- */
 
 #header .col-4 {
@@ -674,7 +557,7 @@ nav#nav-mobile a:hover {
 
 .social-icons a {
     display: inline-block;
-    width: 32px;
+    width: 28px;
     text-align: center;
 }
 
@@ -799,7 +682,6 @@ h6 {
     display: block;
     width: 30px;
     height: 5px;
-    margin-top: 30px;
 }
 
 
@@ -816,9 +698,15 @@ h6 {
     font-size: 15px !important;
 }
 
+
 .icon img {
     height: 60px;
-    width: auto
+    width: auto;
+    margin-bottom: 20px
+}
+
+.icon h4 {
+    font-weight: 600
 }
 
 /*Icon Block*/
@@ -935,7 +823,14 @@ h6 {
 /* --------- 6.3 Testimonials ---------- */
 
 .testimonial {
-    padding: 15px;
+    padding: 10px 20px;
+}
+
+.testimonial i {
+    float: right; 
+    line-height: 22px;
+    margin-right: 10px;
+    color: #9c9c9c;
 }
 
 blockquote {
@@ -972,9 +867,6 @@ blockquote {
 
 /* Style Big */
 
-.testimonial.bigtest {
-    padding-top: 0;
-}
 
 /* --------- 6.4 Gallery ---------- */
 
@@ -1248,34 +1140,34 @@ blockquote {
 }
 
 #p1:hover ~ .process-ship {
-    background-image: url("../images/p1.png");
+    background-image: url("../images/p1.jpg");
 }
 
 #p2:hover ~ .process-ship {
-    background-image: url("../images/p2.png");
+    background-image: url("../images/p2.jpg");
 }
 
 #p3:hover ~ .process-ship {
-    background-image: url("../images/p3.png");
+    background-image: url("../images/p3.jpg");
 }
 
 #p4:hover ~ .process-ship {
-    background-image: url("../images/p4.png");
+    background-image: url("../images/p4.jpg");
 }
 
 #p5:hover ~ .process-ship {
-    background-image: url("../images/p5.png");
+    background-image: url("../images/p5.jpg");
 }
 
 #p6:hover ~ .process-ship {
-    background-image: url("../images/p6.png");
+    background-image: url("../images/p6.jpg");
 }
 
 .process-ship {
     margin-top: 300px;
     margin-bottom: 80px;
     transition: all 0.3s ease-out;
-    background-image: url("../images/process.png");
+    background-image: url("../images/process.jpg");
     background-repeat: no-repeat;
     background-size: auto 100%;
     width: 100%; 
